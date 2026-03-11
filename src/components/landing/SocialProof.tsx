@@ -1,5 +1,18 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import spartanLogo from "@/assets/brands/spartan.webp";
+import bralimpiaLogo from "@/assets/brands/bralimpia.webp";
+import cheiroBomLogo from "@/assets/brands/cheiro-bom.webp";
+import sevengelLogo from "@/assets/brands/sevengel.webp";
+import santherLogo from "@/assets/brands/santher.webp";
+
+const brands = [
+  { name: "Santher Professional", logo: santherLogo },
+  { name: "Spartan", logo: spartanLogo },
+  { name: "Bralimpia", logo: bralimpiaLogo },
+  { name: "Sevengel", logo: sevengelLogo },
+  { name: "Cheiro Bom", logo: cheiroBomLogo },
+];
 
 const stats = [
   { value: "8+", label: "Anos atendendo empresas no RJ" },
