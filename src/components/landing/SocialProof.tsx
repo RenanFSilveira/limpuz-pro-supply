@@ -94,11 +94,22 @@ const SocialProof = () => (
         ))}
       </div>
 
-      {/* Credibility line */}
+      {/* Brand logos */}
       <div className="mt-16 text-center">
-        <p className="text-sm font-medium text-muted-foreground">
+        <p className="mb-6 text-sm font-medium text-muted-foreground">
           Produtos de linha profissional testados e aprovados por empresas no RJ.
         </p>
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+          {brands.map((b) => (
+            <img
+              key={b.name}
+              src={b.logo}
+              alt={b.name}
+              className="h-8 object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 md:h-10"
+              loading="lazy"
+            />
+          ))}
+        </div>
       </div>
     </div>
   </section>
