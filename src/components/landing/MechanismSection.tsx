@@ -5,7 +5,7 @@ const steps = [
   { icon: MessageCircle, title: "Fale com a gente", desc: "Entre em contato via WhatsApp. Sem formulário, sem espera." },
   { icon: Search, title: "Diagnóstico rápido", desc: "Nosso especialista entende sua demanda e indica o produto certo para cada uso." },
   { icon: Truck, title: "Entrega em até 24h", desc: "Produto profissional concentrado entregue na sua porta, no RJ." },
-  { icon: Headphones, title: "Suporte contínuo", desc: "Dúvida de dosagem ou aplicação? A Limpuz responde — sempre." },
+  { icon: Headphones, title: "Suporte contínuo", desc: "Dúvida de dosagem ou aplicação? A equipe responde — sempre." },
 ];
 
 const compLeft = [
