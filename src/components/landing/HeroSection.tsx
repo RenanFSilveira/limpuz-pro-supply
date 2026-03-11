@@ -43,7 +43,7 @@ const HeroSection = () => (
         >
           <img
             src={heroProducts}
-            alt="Produtos de limpeza profissional Limpuz"
+            alt="Produtos de limpeza profissional"
             className="rounded-2xl shadow-2xl"
             loading="eager"
           />

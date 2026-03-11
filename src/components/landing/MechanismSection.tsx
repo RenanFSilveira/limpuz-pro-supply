@@ -88,7 +88,7 @@ const MechanismSection = () => (
             </ul>
           </div>
           <div className="rounded-xl border border-accent/30 bg-accent/5 p-6">
-            <p className="mb-4 font-bold text-accent">Fornecimento Técnico Limpuz</p>
+            <p className="mb-4 font-bold text-accent">Fornecimento Técnico</p>
             <ul className="space-y-3">
               {compRight.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-foreground">

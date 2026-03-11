@@ -3,7 +3,7 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const FINAL_MESSAGE =
-  "Olá! Quero falar com um especialista da Limpuz sobre produtos de limpeza profissional para minha empresa.";
+  "Olá! Quero falar com um especialista sobre produtos de limpeza profissional para minha empresa.";
 
 const FinalCTA = () => (
   <section className="section-padding" style={{ background: "var(--hero-gradient)" }}>
