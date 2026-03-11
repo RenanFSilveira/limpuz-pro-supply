@@ -32,7 +32,7 @@ const MechanismSection = () => (
         className="mx-auto max-w-3xl text-center"
       >
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
-          Fornecimento Técnico Limpuz
+          Fornecimento Técnico
         </p>
         <h2 className="mb-4 text-2xl font-extrabold text-foreground md:text-3xl lg:text-4xl">
           Como funciona na prática
