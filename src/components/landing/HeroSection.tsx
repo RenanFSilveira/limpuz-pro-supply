@@ -19,7 +19,7 @@ const HeroSection = () => (
             Seu negócio ainda depende de produto de limpeza que não rende?
           </h1>
           <p className="mb-8 max-w-lg text-lg leading-relaxed text-primary-foreground/85">
-            A Limpuz fornece produtos profissionais concentrados — com suporte técnico, indicação do produto certo e entrega em até 24h no Rio de Janeiro. Sem surpresa, sem recompra de emergência.
+            Fornecemos produtos profissionais concentrados — com suporte técnico, indicação do produto certo e entrega em até 24h no Rio de Janeiro. Sem surpresa, sem recompra de emergência.
           </p>
           <a
             href={getWhatsAppUrl(DEFAULT_CTA_MESSAGE)}
