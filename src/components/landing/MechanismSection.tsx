@@ -5,7 +5,7 @@ const steps = [
   { icon: MessageCircle, title: "Fale com a gente", desc: "Entre em contato via WhatsApp. Sem formulário, sem espera." },
   { icon: Search, title: "Diagnóstico rápido", desc: "Nosso especialista entende sua demanda e indica o produto certo para cada uso." },
   { icon: Truck, title: "Entrega em até 24h", desc: "Produto profissional concentrado entregue na sua porta, no RJ." },
-  { icon: Headphones, title: "Suporte contínuo", desc: "Dúvida de dosagem ou aplicação? A Limpuz responde — sempre." },
+  { icon: Headphones, title: "Suporte contínuo", desc: "Dúvida de dosagem ou aplicação? A equipe responde — sempre." },
 ];
 
 const compLeft = [
@@ -32,7 +32,7 @@ const MechanismSection = () => (
         className="mx-auto max-w-3xl text-center"
       >
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
-          Fornecimento Técnico Limpuz
+          Fornecimento Técnico
         </p>
         <h2 className="mb-4 text-2xl font-extrabold text-foreground md:text-3xl lg:text-4xl">
           Como funciona na prática
@@ -88,7 +88,7 @@ const MechanismSection = () => (
             </ul>
           </div>
           <div className="rounded-xl border border-accent/30 bg-accent/5 p-6">
-            <p className="mb-4 font-bold text-accent">Fornecimento Técnico Limpuz</p>
+            <p className="mb-4 font-bold text-accent">Fornecimento Técnico</p>
             <ul className="space-y-3">
               {compRight.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-foreground">

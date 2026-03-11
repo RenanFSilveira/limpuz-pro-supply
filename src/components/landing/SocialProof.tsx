@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
 const stats = [
-  { value: "8+", label: "Anos de mercado" },
+  { value: "8+", label: "Anos atendendo empresas no RJ" },
   { value: "500+", label: "Empresas atendidas" },
   { value: "24h", label: "Prazo de entrega no RJ" },
 ];
@@ -11,12 +11,12 @@ const testimonials = [
   {
     name: "Carlos Mendes",
     role: "Gerente de compras — Rede de restaurantes",
-    text: "Antes a gente comprava no Atacadão e vivia ficando sem produto. Desde que começamos com a Limpuz, nunca mais faltou. O rendimento do concentrado é outro nível.",
+    text: "Antes a gente comprava no Atacadão e vivia ficando sem produto. Desde que começamos com o fornecedor, nunca mais faltou. O rendimento do concentrado é outro nível.",
   },
   {
     name: "Patrícia Alves",
     role: "Proprietária — Clínica odontológica",
-    text: "O que me ganhou foi o suporte. Eu não entendia nada de produto de limpeza profissional. A equipe da Limpuz me indicou tudo — e entregou no dia seguinte.",
+    text: "O que me ganhou foi o suporte. Eu não entendia nada de produto de limpeza profissional. A equipe me indicou tudo — e entregou no dia seguinte.",
   },
   {
     name: "Roberto Farias",
@@ -24,8 +24,6 @@ const testimonials = [
     text: "A previsibilidade mudou tudo. Faço o pedido pelo WhatsApp, chega no prazo, e se tenho dúvida de dosagem, resolvo em 5 minutos com eles.",
   },
 ];
-
-const brands = ["Santher Professional", "Spartan do Brasil", "Bralimpia", "Sevengel", "Cheiro Bom"];
 
 const SocialProof = () => (
   <section className="section-padding">
@@ -83,18 +81,11 @@ const SocialProof = () => (
         ))}
       </div>
 
-      {/* Brand bar */}
+      {/* Credibility line */}
       <div className="mt-16 text-center">
-        <p className="mb-6 text-sm font-medium text-muted-foreground">
-          Trabalhamos com as marcas que o mercado profissional confia
+        <p className="text-sm font-medium text-muted-foreground">
+          Produtos de linha profissional testados e aprovados por empresas no RJ.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-          {brands.map((b) => (
-            <span key={b} className="text-sm font-bold tracking-wide text-primary/60">
-              {b}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   </section>
