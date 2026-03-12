@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, DEFAULT_CTA_MESSAGE } from "@/lib/whatsapp";
 import heroProducts from "@/assets/hero-products.jpg";
+import { pushToDataLayer } from "@/lib/gtm";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden" style={{ background: "var(--hero-gradient)" }}>
@@ -22,14 +23,17 @@ const HeroSection = () => (
             Fornecemos produtos profissionais concentrados — com suporte técnico, indicação do produto certo e entrega em até 24h no Rio de Janeiro. Sem surpresa, sem recompra de emergência.
           </p>
           <a
-            href={getWhatsAppUrl(DEFAULT_CTA_MESSAGE)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp text-base md:text-lg"
-          >
-            <WhatsAppIcon className="h-6 w-6" />
-            Quero minha cotação agora
-          </a>
+          href={getWhatsAppUrl(DEFAULT_CTA_MESSAGE)}
+          target="_blank"
+          rel="noopener noreferrer"
+          // Adicionamos a classe 'wpp' aqui
+          className="btn-whatsapp wpp text-base md:text-lg"
+          // Adicionamos o evento de disparo aqui
+          onClick={() => pushToDataLayer("lead_wpp")}
+        >
+          <WhatsAppIcon className="h-6 w-6" />
+          Quero minha cotação agora
+        </a>
           <p className="mt-4 text-sm text-primary-foreground/60">
             Atendimento rápido · Sem compromisso · Entrega em 24h
           </p>
@@ -48,6 +52,7 @@ const HeroSection = () => (
             loading="eager"
           />
         </motion.div>
+
       </div>
     </div>
   </section>

@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5521999999999"; // Substituir pelo número real
+const WHATSAPP_NUMBER = "5521999769500"; // Substituir pelo número real
 
 export const getWhatsAppUrl = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { pushToDataLayer } from "@/lib/gtm"; // Importando a função do GTM
 
 const FINAL_MESSAGE =
   "Olá! Quero falar com um especialista sobre produtos de limpeza profissional para minha empresa.";
@@ -24,7 +25,8 @@ const FinalCTA = () => (
           href={getWhatsAppUrl(FINAL_MESSAGE)}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-whatsapp text-base md:text-lg"
+          className="btn-whatsapp wpp text-base md:text-lg" // Adicionado a classe wpp
+          onClick={() => pushToDataLayer("lead_wpp")} // Adicionado o disparo do GTM
         >
           <WhatsAppIcon className="h-6 w-6" />
           Falar com especialista agora

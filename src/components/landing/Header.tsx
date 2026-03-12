@@ -1,5 +1,6 @@
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, DEFAULT_CTA_MESSAGE } from "@/lib/whatsapp";
+import { pushToDataLayer } from "@/lib/gtm";
 
 const Header = () => (
   <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
@@ -9,7 +10,8 @@ const Header = () => (
         href={getWhatsAppUrl(DEFAULT_CTA_MESSAGE)}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn-whatsapp-sm"
+        className="btn-whatsapp-sm wpp"
+        onClick={() => pushToDataLayer("lead_wpp")}
       >
         <WhatsAppIcon className="h-4 w-4" />
         <span className="hidden sm:inline">Solicitar Cotação</span>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Scroll, Droplets, FlaskConical, Wind } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, getCategoryMessage } from "@/lib/whatsapp";
+import { pushToDataLayer } from "@/lib/gtm"; // Importando a função do GTM
 
 const categories = [
   {
@@ -79,7 +80,8 @@ const ProductCatalog = () => (
               href={getWhatsAppUrl(getCategoryMessage(cat.name))}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp-sm mt-auto justify-center text-xs"
+              className="btn-whatsapp-sm wpp mt-auto justify-center text-xs" // Adicionado a classe wpp
+              onClick={() => pushToDataLayer("lead_wpp")} // Adicionado o disparo do GTM
             >
               <WhatsAppIcon className="h-4 w-4" />
               Pedir cotação
