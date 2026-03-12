@@ -105,7 +105,7 @@ const SocialProof = () => (
               key={b.name}
               src={b.logo}
               alt={b.name}
-              className="h-8 object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 md:h-10"
+              className="h-8 object-contain md:h-10"
               loading="lazy"
             />
           ))}

@@ -15,8 +15,8 @@ const brands = [
 const TrustBar = () => (
   <section className="border-b border-border py-8" style={{ backgroundColor: "hsl(var(--trust-bar))" }}>
     <div className="container-lp">
-      <p className="mb-6 text-center text-sm font-medium text-muted-foreground">
-        Produtos de linha profissional testados e aprovados por empresas no RJ.
+      <p className="mb-8 text-center font-heading text-base font-semibold text-foreground/80 md:text-lg">
+        Padrão profissional para o seu negócio
       </p>
       <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
         {brands.map((b) => (
@@ -24,7 +24,7 @@ const TrustBar = () => (
             key={b.name}
             src={b.logo}
             alt={b.name}
-            className="h-8 object-contain opacity-80 grayscale transition hover:opacity-100 hover:grayscale-0 md:h-10"
+            className="h-8 object-contain md:h-10"
             loading="lazy"
           />
         ))}
