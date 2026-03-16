@@ -1,15 +1,35 @@
-import spartanLogo from "@/assets/brands/spartan.webp";
 import bralimpiaLogo from "@/assets/brands/bralimpia.webp";
 import cheiroBomLogo from "@/assets/brands/cheiro-bom.webp";
-import sevengelLogo from "@/assets/brands/sevengel.webp";
-import santherLogo from "@/assets/brands/santher.webp";
+import toQLogo from "@/assets/brands/toQ-logo.png";
+import vabeneLogo from "@/assets/brands/vabene-logo.png";
+import archoteLogo from "@/assets/brands/archote-logo.png";
+import topbelLogo from "@/assets/brands/topbel-logo.png";
+import plastsacLogo from "@/assets/brands/plastsac-logo.png";
+import aninLogo from "@/assets/brands/anin-logo.png";
+import nobreLogo from "@/assets/brands/nobre-logo.png";
+import pureairLogo from "@/assets/brands/pureair-logo.png";
+import proinsetLogo from "@/assets/brands/proinset-logo.png";
+import vejaLogo from "@/assets/brands/veja-logo.png";
+import cifLogo from "@/assets/brands/CIF-logo.png";
+import poliflorLogo from "@/assets/brands/poliflor-logo.png";
+import ouropelLogo from "@/assets/brands/ouropel-logo.png";
 
 const brands = [
-  { name: "Santher Professional", logo: santherLogo },
-  { name: "Spartan", logo: spartanLogo },
   { name: "Bralimpia", logo: bralimpiaLogo },
-  { name: "Sevengel", logo: sevengelLogo },
   { name: "Cheiro Bom", logo: cheiroBomLogo },
+  { name: "toQ", logo: toQLogo },
+  { name: "Vabene", logo: vabeneLogo },
+  { name: "Archote", logo: archoteLogo },
+  { name: "Topbel", logo: topbelLogo },
+  { name: "Plastsac", logo: plastsacLogo },
+  { name: "Anin", logo: aninLogo },
+  { name: "Nobre", logo: nobreLogo },
+  { name: "PureAir", logo: pureairLogo },
+  { name: "Proinset", logo: proinsetLogo },
+  { name: "Veja", logo: vejaLogo },
+  { name: "CIF", logo: cifLogo },
+  { name: "Poliflor", logo: poliflorLogo },
+  { name: "Ouropel", logo: ouropelLogo },
 ];
 
 const TrustBar = () => (
@@ -18,16 +38,24 @@ const TrustBar = () => (
       <p className="mb-8 text-center font-heading text-base font-semibold text-foreground/80 md:text-lg">
         Padrão profissional para o seu negócio
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-        {brands.map((b) => (
-          <img
-            key={b.name}
-            src={b.logo}
-            alt={b.name}
-            className="h-8 object-contain md:h-10"
-            loading="lazy"
-          />
-        ))}
+      <div
+        className="group relative overflow-hidden"
+        style={{
+          maskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
+        }}
+      >
+        <div className="flex w-max animate-marquee items-center gap-12 group-hover:[animation-play-state:paused]">
+          {[...brands, ...brands].map((b, i) => (
+            <img
+              key={i}
+              src={b.logo}
+              alt={b.name}
+              className="h-10 w-auto object-contain md:h-12"
+              loading="lazy"
+            />
+          ))}
+        </div>
       </div>
     </div>
   </section>
