@@ -4,15 +4,14 @@ import toQLogo from "@/assets/brands/toQ-logo.png";
 import vabeneLogo from "@/assets/brands/vabene-logo.png";
 import archoteLogo from "@/assets/brands/archote-logo.png";
 import topbelLogo from "@/assets/brands/topbel-logo.png";
-import plastsacLogo from "@/assets/brands/plastsac-logo.png";
+import delicattoLogo from "@/assets/brands/Delicatto.png";
+import floraLogo from "@/assets/brands/Flora.png";
 import aninLogo from "@/assets/brands/anin-logo.png";
 import nobreLogo from "@/assets/brands/nobre-logo.png";
-import pureairLogo from "@/assets/brands/pureair-logo.png";
 import proinsetLogo from "@/assets/brands/proinset-logo.png";
 import vejaLogo from "@/assets/brands/veja-logo.png";
-import cifLogo from "@/assets/brands/CIF-logo.png";
 import poliflorLogo from "@/assets/brands/poliflor-logo.png";
-import ouropelLogo from "@/assets/brands/ouropel-logo.png";
+import ouropelGoldLogo from "@/assets/brands/Ouroppel Gold.png";
 
 const brands = [
   { name: "Bralimpia", logo: bralimpiaLogo },
@@ -21,15 +20,14 @@ const brands = [
   { name: "Vabene", logo: vabeneLogo },
   { name: "Archote", logo: archoteLogo },
   { name: "Topbel", logo: topbelLogo },
-  { name: "Plastsac", logo: plastsacLogo },
+  { name: "Delicatto", logo: delicattoLogo },
+  { name: "Flora", logo: floraLogo },
   { name: "Anin", logo: aninLogo },
   { name: "Nobre", logo: nobreLogo },
-  { name: "PureAir", logo: pureairLogo },
   { name: "Proinset", logo: proinsetLogo },
   { name: "Veja", logo: vejaLogo },
-  { name: "CIF", logo: cifLogo },
   { name: "Poliflor", logo: poliflorLogo },
-  { name: "Ouropel", logo: ouropelLogo },
+  { name: "Ouropel Gold", logo: ouropelGoldLogo },
 ];
 
 const TrustBar = () => (
@@ -45,15 +43,19 @@ const TrustBar = () => (
           WebkitMaskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent)",
         }}
       >
-        <div className="flex w-max animate-marquee items-center gap-12 group-hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-marquee items-center gap-8 group-hover:[animation-play-state:paused]">
           {[...brands, ...brands].map((b, i) => (
-            <img
+            <div
               key={i}
-              src={b.logo}
-              alt={b.name}
-              className="h-10 w-auto object-contain md:h-12"
-              loading="lazy"
-            />
+              className="flex items-center justify-center rounded-xl bg-white px-4 py-2 shadow-sm ring-1 ring-black/5"
+            >
+              <img
+                src={b.logo}
+                alt={b.name}
+                className="h-8 w-auto object-contain md:h-10"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </div>
