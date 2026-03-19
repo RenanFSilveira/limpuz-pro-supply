@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { getWhatsAppUrl, DEFAULT_CTA_MESSAGE } from "@/lib/whatsapp";
-import heroProducts from "@/assets/hero-products.jpg";
+import heroBannerDesktop from "@/assets/limpuz_banner_desktop.png";
+import heroBannerMobile from "@/assets/limpuz_banner_mobile.png";
 import { pushToDataLayer } from "@/lib/gtm";
 
 const HeroSection = () => (
@@ -43,14 +44,16 @@ const HeroSection = () => (
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="hidden lg:block"
         >
-          <img
-            src={heroProducts}
-            alt="Produtos de limpeza profissional"
-            className="rounded-2xl shadow-2xl"
-            loading="eager"
-          />
+          <picture>
+            <source media="(min-width: 1024px)" srcSet={heroBannerDesktop} />
+            <img
+              src={heroBannerMobile}
+              alt="Produtos de limpeza profissional Limpuz"
+              className="w-full rounded-2xl shadow-2xl"
+              loading="eager"
+            />
+          </picture>
         </motion.div>
 
       </div>
