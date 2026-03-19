@@ -10,9 +10,6 @@ import aninLogo from "@/assets/brands/anin-logo.png";
 import nobreLogo from "@/assets/brands/nobre-logo.png";
 import proinsetLogo from "@/assets/brands/proinset-logo.png";
 import vejaLogo from "@/assets/brands/veja-logo.png";
-import poliflorLogo from "@/assets/brands/poliflor-logo.png";
-import ouropelGoldLogo from "@/assets/brands/Ouroppel Gold.png";
-
 const brands = [
   { name: "Bralimpia", logo: bralimpiaLogo },
   { name: "Cheiro Bom", logo: cheiroBomLogo },
@@ -26,8 +23,6 @@ const brands = [
   { name: "Nobre", logo: nobreLogo },
   { name: "Proinset", logo: proinsetLogo },
   { name: "Veja", logo: vejaLogo },
-  { name: "Poliflor", logo: poliflorLogo },
-  { name: "Ouropel Gold", logo: ouropelGoldLogo },
 ];
 
 const TrustBar = () => (
